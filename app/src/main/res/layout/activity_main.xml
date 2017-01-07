@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.foray.testapp.MainActivity"
+    android:background="#FF5722">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bg_3"
+        android:id="@+id/imgv1"
+        android:layout_alignBottom="@+id/txtgest"
+        android:layout_alignRight="@+id/clckbtn"
+        android:layout_alignEnd="@+id/clckbtn" />
+
+    <Button
+        android:text="Click me"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/clckbtn"
+        android:background="#FDD835"
+        android:layout_width="100dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/txtgest"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clckbtn"
+        android:layout_alignRight="@+id/clckbtn"
+        android:layout_alignEnd="@+id/clckbtn"
+        android:layout_marginTop="74dp"
+        android:id="@+id/nextbtn"
+        android:elevation="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtgest"
+        android:text="HI ANDROID"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

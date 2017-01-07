@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data_base__ex_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.foray.testapp.dataBase_Ex_Activity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nametxt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Your Name"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/nametxt"
+        android:layout_alignRight="@+id/nametxt"
+        android:layout_alignEnd="@+id/nametxt"
+        android:layout_marginTop="33dp"
+        android:id="@+id/degtxt"
+        android:hint="Enthe Your Degree"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:id="@+id/adrtxt"
+        android:layout_below="@+id/degtxt"
+        android:layout_alignLeft="@+id/degtxt"
+        android:layout_alignStart="@+id/degtxt"
+        android:hint="Enter Your Address"
+        android:width="300dp" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delbtn"
+        android:elevation="6dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:width="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/savebtn"/>
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebtn"
+        android:elevation="6dp"
+        android:layout_marginBottom="103dp"
+        android:width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:onClick="addButtonClicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/disptxt"
+        android:hint="Reslut are here only dispalyed"
+        android:layout_below="@+id/delbtn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
